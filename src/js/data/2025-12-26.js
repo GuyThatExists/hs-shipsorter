@@ -619,5 +619,12 @@ dataSet[dataSetVersion].characterData = [
     opts: {
       eridan: false
     }
+  },
+  {
+    name: "WQPM (B1 White Queen x PM)",
+    img: "shiplist pics.png",
+    opts: {
+      eridan: false
+    }
   }
 ];
