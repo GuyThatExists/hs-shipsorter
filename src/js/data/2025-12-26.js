@@ -40,10 +40,10 @@ dataSet[dataSetVersion].options = [
     ]
   },
   {
-    name: "Include Minor Characters",
+    name: "Exclude Minor Characters",
     key: "minor",
-    tooltip: "Check this to include the characters that only appear in one scene.",
-    checked: false
+    tooltip: "Check this box to exclude the characters that only appear in one scene.",
+    checked: true
   }
 ];
 
