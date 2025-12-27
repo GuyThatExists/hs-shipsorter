@@ -3,1003 +3,468 @@ dataSet[dataSetVersion] = {};
 
 dataSet[dataSetVersion].options = [
   {
-    name: "Filter by Species",
-    key: "species",
-    tooltip: "Check this to restrict to characters of a particular species.",
-    checked: true,
-    sub: [
-      { name: "Human", tooltip: "Includes all human characters (e.g. Rose, Dirk, Harry). Includes Yiffy.", key: "human" },
-      { name: "Troll", tooltip: "Includes all troll characters (e.g. Terezi, Vrissy, Swifer)", key: "troll" },
-      { name: "Cherub", tooltip: "Includes all cherub characters (e.g. all three Calliopes)", key: "cherub" },
-      { name: "Nymph", tooltip: "Includes all nymph characters (e.g. Ly'lac, Meemaw, Dagger)", key: "nymph" },
-      { name: "Satyr", tooltip: "Includes all satyr characters (e.g. Swiss, CT, TC)", key: "satyr" },
-      { name: "Carapacian", tooltip: "Includes all carapacian characters (e.g. Colluding Dunce, Bec Noir, MD)", key: "carap", checked: false },
-      { name: "Consort", tooltip: "Includes all consort characters (None so far)", key: "consort", checked: false },
-      { name: "Denizen", tooltip: "Includes all denizen characters (e.g. Seth)", key: "denizen", checked: false },
-      { name: "Sprite", tooltip: "Includes all sprite characters (e.g. Jasprose, Davepeta, Fefeta)", key: "sprite", checked: false },
-      { name: "Leprechaun", tooltip: "Includes all leprechaun characters (e.g. Crowbar, Sawbuck, Clover)", key: "leprechaun", checked: false },
-      { name: "Experiment", tooltip: "Includes all of Rosebot and Ult!Dirk's experiments (not including nymphs and satrys)", key: "exp", checked: false },
-      { name: "Other", tooltip: "Includes all characters that don't fit into the above groups (e.g. Mindmom, Doc Scratch)", key: "other", checked: false }
-    ]
-  },
-  {
-    name: "Filter by Story",
-    key: "story",
-    tooltip: "Check this to restrict to characters of a particular branch of the story.",
-    checked: true,
-    sub: [
-      { name: "Meat", tooltip: "Only includes characters that appear in the Meat timeline. Excludes new Deltritus characters.", key: "meat" },
-      { name: "Delta Session", tooltip: "Only includes characters that first appear on Deltritus (e.g. Experiments, Ly'lac, Swiss) and Shurb characters (e.g. Noir, Dunce, Seth).", key: "delta" },
-      { name: "Candy", tooltip: "Only includes characters that appear in the Candy timeline. Excludes the Plot Point characters.", key: "candy" },
-      { name: "Plot Point", tooltip: "Only includes characters that appear in the Plot Point.", key: "pp", checked: false },
-      { name: "Fanontinuum", tooltip: "Only includes characters that appear in the Fanontinuum.", key: "fanon", checked: false },
-      { name: "Catnapped", tooltip: "Only includes characters that appear in the Bonus Story Catnapped.", key: "catnap", checked: false },
-      { name: "Diamonds, Dames, and Dads", tooltip: "Only includes characters that appear in the Bonus Story Diamonds, Dames, and Dads.", key: "ddd", checked: false },
-      { name: "A Threat, Sensed", tooltip: "Only includes characters that appear in the Bonus Story A Threat, Sensed.", key: "threat", checked: false },
-      { name: "The Influencers", tooltip: "Only includes characters that appear in the Bonus Story The Influencers.", key: "influence", checked: false }
-    ]
-  },
-  {
-    name: "Exclude Minor Characters",
-    key: "minor",
-    tooltip: "Check this box to exclude the characters that only appear in one scene.",
-    checked: true
+    name: "Exclude Eridan Ships",
+    key: "eridan",
+    tooltip: "Just because you asked CEO.",
+    checked: false
   }
 ];
 
 dataSet[dataSetVersion].characterData = [
   {
-    name: "Ultimate Dirk Strider",
-    img: "ultdirk.png",
+    name: "Grimdorks (June x Rose)",
     opts: {
-      species: ["human"],
-      story: ["meat", "threat"],
-      minor: false
+      eridan: false
     }
   },
   {
-    name: "Jake English (Candy)",
-    img: "cjake.png",
+    name: "Rosemary (Rose x Kanaya)",
     opts: {
-      species: ["human"],
-      story: ["candy"],
-      minor: false
+      eridan: false
     }
   },
   {
-    name: "Brain Ghost Dirk (Candy)",
-    img: "cbgd.png",
+    name: "DaveJade",
     opts: {
-      species: ["human"],
-      story: ["candy"],
-      minor: false
+      eridan: false
     }
   },
   {
-    name: "Jane Crocker (Candy)",
-    img: "cjane.png",
+    name: "RoseJade",
     opts: {
-      species: ["human"],
-      story: ["candy"],
-      minor: false
+      eridan: false
     }
   },
   {
-    name: "Vriska Maryam-Lalonde",
-    img: "vrissy.png",
+    name: "Pepsicola (June x Dave)",
     opts: {
-      species: ["troll"],
-      story: ["candy"],
-      minor: false
+      eridan: false
     }
   },
   {
-    name: "Vriska Serket",
-    img: "vriska.png",
+    name: "Arasol (Aradia x Sollux)",
     opts: {
-      species: ["troll"],
-      story: ["candy"],
-      minor: false
+      eridan: false
     }
   },
   {
-    name: "Tavros Crocker",
-    img: "tavvy.png",
+    name: "Erisol (Eridan x Sollux)",
     opts: {
-      species: ["human"],
-      story: ["candy"],
-      minor: false
+      eridan: true
     }
   },
   {
-    name: "Gamzee Makara",
-    img: "gamzee.png",
+    name: "Roxygen (Roxy x June)",
     opts: {
-      species: ["troll"],
-      story: ["candy"],
-      minor: true
+      eridan: false
     }
   },
   {
-    name: "Harry Anderson Egbert",
-    img: "harry.png",
+    name: "Grimdorks (John x Rose)",
     opts: {
-      species: ["human"],
-      story: ["candy"],
-      minor: false
+      eridan: false
     }
   },
   {
-    name: "Kanaya Maryam (Meat)",
-    img: "mkanaya.png",
+    name: "Pepsicola (John x Dave)",
     opts: {
-      species: ["troll"],
-      story: ["meat"],
-      minor: false
+      eridan: false
     }
   },
   {
-    name: "Roxy Lalonde (Meat)",
-    img: "mroxy.png",
+    name: "Roxygen (Roxy x John)",
     opts: {
-      species: ["human"],
-      story: ["meat"],
-      minor: false
+      eridan: false
     }
   },
   {
-    name: "Karkat Vantas (Meat)",
-    img: "mkarkat.png",
+    name: "CallieRoxy",
     opts: {
-      species: ["troll"],
-      story: ["meat"],
-      minor: false
+      eridan: false
     }
   },
   {
-    name: "Rosebot",
-    img: "mrose.png",
+    name: "DirkJake",
     opts: {
-      species: ["human"],
-      story: ["meat", "threat"],
-      minor: false
+      eridan: false
     }
   },
   {
-    name: "The First Experiment",
-    img: "exp1.png",
+    name: "JaneJake",
     opts: {
-      species: ["exp"],
-      story: ["delta"],
-      minor: true
+      eridan: false
     }
   },
   {
-    name: "Jade Harley (Meat)",
-    img: "mjade.png",
+    name: "Davekat (Dave x Karkat)",
     opts: {
-      species: ["human"],
-      story: ["meat"],
-      minor: false
+      eridan: false
     }
   },
   {
-    name: "Swifer Eggmop (Candy)",
-    img: "cswifer.png",
+    name: "Gamkat (Gamzee x Karkat)",
     opts: {
-      species: ["troll"],
-      story: ["candy"],
-      minor: true
+      eridan: false
     }
   },
   {
-    name: "Roxy Lalonde (Candy)",
-    img: "croxy.png",
+    name: "Nepkat (Nepeta x Karkat)",
     opts: {
-      species: ["human"],
-      story: ["candy"],
-      minor: false
+      eridan: false
     }
   },
   {
-    name: "John Egbert (Candy)",
-    img: "cjohn.png",
+    name: "Spider8reath (Vriska x John)",
     opts: {
-      species: ["human"],
-      story: ["meat"],
-      minor: false
+      eridan: false
     }
   },
   {
-    name: "Rose Lalonde (Candy)",
-    img: "crose.png",
+    name: "Spider8reath (Vriska x June)",
     opts: {
-      species: ["human"],
-      story: ["candy"],
-      minor: false
+      eridan: false
     }
   },
   {
-    name: "Kanaya Maryam (Candy)",
-    img: "ckanaya.png",
+    name: "Vrisrezi (Vriska x Terezi)",
     opts: {
-      species: ["troll"],
-      story: ["candy"],
-      minor: false
+      eridan: false
     }
   },
   {
-    name: "Alfonz",
-    img: "alfonz.png",
+    name: "Roserezi (Rose x Terezi)",
     opts: {
-      species: ["troll"],
-      story: ["candy"],
-      minor: true
+      eridan: false
     }
   },
   {
-    name: "Jade Harley (Candy)",
-    img: "cjade.png",
+    name: "Johnrezi (John x Terezi)",
     opts: {
-      species: ["human"],
-      story: ["candy"],
-      minor: false
+      eridan: false
     }
   },
   {
-    name: "Yiffany Longstocking Lalonde Harley",
-    img: "yiffy.png",
+    name: "Junerezi (June x Terezi)",
     opts: {
-      species: ["human"],
-      story: ["candy", "threat"],
-      minor: false
+      eridan: false
     }
   },
   {
-    name: "Bunny Experiment",
-    img: "exp2.png",
+    name: "Gamtav (Gamzee x Tavros)",
     opts: {
-      species: ["exp"],
-      story: ["delta"],
-      minor: true
+      eridan: false
     }
   },
   {
-    name: "Dutton Experiment",
-    img: "exp3.png",
+    name: "Jadenep (Jade x Nepeta)",
     opts: {
-      species: ["exp"],
-      story: ["delta"],
-      minor: true
+      eridan: false
     }
   },
   {
-    name: "Horse Experiment",
-    img: "exp4.png",
+    name: "DirkRoxy",
     opts: {
-      species: ["exp"],
-      story: ["delta"],
-      minor: true
+      eridan: false
     }
   },
   {
-    name: "Licker Experiment",
-    img: "exp5.png",
+    name: "Cotton Candy (Roxy x Jane)",
     opts: {
-      species: ["exp"],
-      story: ["delta"],
-      minor: true
+      eridan: false
     }
   },
   {
-    name: "Foxgrub Experiment",
-    img: "exp6.png",
+    name: "Javepeta (Jade x Davepeta)",
     opts: {
-      species: ["exp"],
-      story: ["delta"],
-      minor: true
+      eridan: false
     }
   },
   {
-    name: "Octopus Experiment",
-    img: "exp7.png",
+    name: "Aldirk (Alt. Callie x Dirk)",
     opts: {
-      species: ["exp"],
-      story: ["delta"],
-      minor: true
+      eridan: false
     }
   },
   {
-    name: "Horse Monster Experiment",
-    img: "exp8.png",
+    name: "Karkan (Karkat x Kanaya)",
     opts: {
-      species: ["exp"],
-      story: ["delta"],
-      minor: true
+      eridan: false
     }
   },
   {
-    name: "Davebot",
-    img: "cdave.png",
+    name: "Dirkuu (Dirk x Caliborn)",
     opts: {
-      species: ["human"],
-      story: ["candy", "meat"],
-      minor: false
+      eridan: false
     }
   },
   {
-    name: "Aradia Megido",
-    img: "aradia.png",
+    name: "Jakeuu (Jake x Caliborn)",
     opts: {
-      species: ["troll"],
-      story: ["candy", "meat"],
-      minor: false
+      eridan: false
     }
   },
   {
-    name: "Sollux Captor",
-    img: "sollux.png",
+    name: "Gamjane (Gamzee x Jane)",
     opts: {
-      species: ["troll"],
-      story: ["candy"],
-      minor: false
+      eridan: false
     }
   },
   {
-    name: "Dead Teen Jade",
-    img: "3jade.png",
+    name: "Jakekat (Jake x Karkat)",
     opts: {
-      species: ["human"],
-      story: ["candy"],
-      minor: true
+      eridan: false
     }
   },
   {
-    name: "CrockerCorp Goons",
-    img: "ccorpgoons.png",
+    name: "Vristav (Vriska x Tavros)",
     opts: {
-      species: ["human"],
-      story: ["candy"],
-      minor: true
+      eridan: false
     }
   },
   {
-    name: "Dave Strider (Meat)",
-    img: "mdave.png",
+    name: "Solfef (Sollux x Feferi)",
     opts: {
-      species: ["human"],
-      story: ["meat"],
-      minor: false
+      eridan: false
     }
   },
   {
-    name: "Calliope (Candy)",
-    img: "ccallie.png",
+    name: "Araequius (Aradia x Equius)",
     opts: {
-      species: ["cherub"],
-      story: ["candy"],
-      minor: false
+      eridan: false
     }
   },
   {
-    name: "G'luyrb, of Portents Most Grim",
-    img: "exp9.png",
+    name: "Meowrails (Nepeta x Equius)",
     opts: {
-      species: ["exp"],
-      story: ["delta"],
-      minor: true
+      eridan: false
     }
   },
   {
-    name: "Terezi Pyrope",
-    img: "terezi.png",
+    name: "Snowjack (Snowman x Spades Slick)",
     opts: {
-      species: ["troll"],
-      story: ["meat"],
-      minor: false
+      eridan: false
     }
   },
   {
-    name: "John Egbert (Meat)",
-    img: "mjohn.png",
+    name: "PMJack (PM x Bec Noir)",
     opts: {
-      species: ["human"],
-      story: ["meat"],
-      minor: true
+      eridan: false
     }
   },
   {
-    name: "Meenah Peixes",
-    img: "meenah.png",
+    name: "WVPM (Mayor x PM)",
     opts: {
-      species: ["troll"],
-      story: ["candy"],
-      minor: false
+      eridan: false
     }
   },
   {
-    name: "Harry's Rabbit",
-    img: "harrysrabbit.png",
+    name: "DocJack (Doc Scratch x Spades Slick)",
     opts: {
-      species: ["other"],
-      story: ["candy"],
-      minor: true
+      eridan: false
     }
   },
   {
-    name: "Alt. Calliope",
-    img: "allie.png",
+    name: "HussDoc (Hussie x Doc Scratch)",
     opts: {
-      species: ["cherub"],
-      story: ["meat", "candy"],
-      minor: false
+      eridan: false
     }
   },
   {
-    name: "Karkat Vantas (Candy)",
-    img: "ckarkat.png",
+    name: "Arameen (Aradia x Meenah)",
     opts: {
-      species: ["troll"],
-      story: ["candy"],
-      minor: false
+      eridan: false
     }
   },
   {
-    name: "LOBsTERs",
-    img: "LOBsTERs.png",
+    name: "Cronkri (Cronus x Kankri)",
     opts: {
-      species: ["troll", "human", "carap", "consort"],
-      story: ["candy"],
-      minor: true
+      eridan: false
     }
   },
   {
-    name: "Aradia Megido (Plot Point)",
-    img: "pparadiabot.png",
+    name: "Meenkat (Meenah x Karkat)",
     opts: {
-      species: ["troll"],
-      story: ["pp"],
-      minor: false
+      eridan: false
     }
   },
   {
-    name: "Davepetasprite^2",
-    img: "davepeta.png",
+    name: "JakeRoxy",
     opts: {
-      species: ["sprite", "human", "troll"],
-      story: ["pp"],
-      minor: false
+      eridan: false
     }
   },
   {
-    name: "Doc Scratch",
-    img: "ppscratch.png",
+    name: "Vrisuius (Vriska x Equius)",
     opts: {
-      species: ["other"],
-      story: ["pp"],
-      minor: false
+      eridan: false
     }
   },
   {
-    name: "Erisolsprite",
-    img: "erisol.png",
+    name: "Johnuu (John x Caliborn)",
     opts: {
-      species: ["sprite", "troll"],
-      story: ["pp"],
-      minor: false
+      eridan: false
     }
   },
   {
-    name: "Fefetasprite",
-    img: "fefeta.png",
+    name: "Juneuu (June x Caliborn)",
     opts: {
-      species: ["sprite", "troll"],
-      story: ["pp"],
-      minor: false
+      eridan: false
     }
   },
   {
-    name: "Gcatavrosprite",
-    img: "gcatavros.png",
+    name: "Sharknade (Eridan x John)",
     opts: {
-      species: ["sprite", "troll", "other"],
-      story: ["pp"],
-      minor: false
+      eridan: true
     }
   },
   {
-    name: "Jasprosesprite^2",
-    img: "jasprose.png",
+    name: "MeenJohn (Meenah x John)",
     opts: {
-      species: ["sprite", "human", "other"],
-      story: ["catnap", "pp"],
-      minor: false
+      eridan: false
     }
   },
   {
-    name: "(Vriska Serket)",
-    img: "ppvriska.png",
+    name: "MeenJune (Meenah x June)",
     opts: {
-      species: ["troll"],
-      story: ["pp"],
-      minor: false
+      eridan: false
     }
   },
   {
-    name: "Mindmom",
-    img: "ppmindmom.png",
+    name: "Johnvrisrezi (John x Vriska x Terezi)",
     opts: {
-      species: ["other"],
-      story: ["pp"],
-      minor: false
+      eridan: false
     }
   },
   {
-    name: "Nannasprite(x1 & x2)",
-    img: "nanna.png",
+    name: "Junevrisrezi (June x Vriska x Terezi)",
     opts: {
-      species: ["sprite", "human"],
-      story: ["pp"],
-      minor: false
+      eridan: false
     }
   },
   {
-    name: "Tavros Nitram",
-    img: "pptavros.png",
+    name: "Aranea x Cronus",
     opts: {
-      species: ["troll"],
-      story: ["pp"],
-      minor: false
+      eridan: false
     }
   },
   {
-    name: "Calliope (Meat)",
-    img: "mcallie.png",
+    name: "Aranea x Porrim",
     opts: {
-      species: ["cherub"],
-      story: ["meat"],
-      minor: false
+      eridan: false
     }
   },
   {
-    name: "Jane Crocker (Meat)",
-    img: "mjane.png",
+    name: "Aranea x Damara",
     opts: {
-      species: ["human"],
-      story: ["catnap", "meat"],
-      minor: false
+      eridan: false
     }
   },
   {
-    name: "Bec Noir",
-    img: "becnoir.png",
+    name: "Meulin x Kurloz",
     opts: {
-      species: ["carap"],
-      story: ["candy"],
-      minor: true
+      eridan: false
     }
   },
   {
-    name: "Clover",
-    img: "clover.png",
+    name: "Meulin x Damara",
     opts: {
-      species: ["leprechaun"],
-      story: ["candy"],
-      minor: true
+      eridan: false
     }
   },
   {
-    name: "Lil' Mr. Gamby",
-    img: "gamby.png",
+    name: "Mituna x Latula",
     opts: {
-      species: ["troll"],
-      story: ["fanon"],
-      minor: true
+      eridan: false
     }
   },
   {
-    name: "Crowbar",
-    img: "crowbar.png",
+    name: "Vriska x Damara",
     opts: {
-      species: ["leprechaun"],
-      story: ["candy", "fanon"],
-      minor: false
+      eridan: false
     }
   },
   {
-    name: "Nepeta Leijon",
-    img: "ftnepeta.png",
+    name: "Cronuscest (Cronus x Cronus)",
     opts: {
-      species: ["troll"],
-      story: ["fanon"],
-      minor: false
+      eridan: false
     }
   },
   {
-    name: "Sawbuck",
-    img: "sawbuck.png",
+    name: "Swagger (Swiss x Dagger)",
     opts: {
-      species: ["leprechaun"],
-      story: ["candy"],
-      minor: true
+      eridan: false
     }
   },
   {
-    name: "Ly'lac, of the Final Applause",
-    img: "lylac.png",
+    name: "Vristavvy (Vrissy x Tavvy)",
     opts: {
-      species: ["nymph"],
-      story: ["delta"],
-      minor: false
+      eridan: false
     }
   },
   {
-    name: "Teacher",
-    img: "teacher.png",
+    name: "Swisstavvy (Swiss x Tavvy)",
     opts: {
-      species: ["human"],
-      story: ["influence"],
-      minor: true
+      eridan: false
     }
   },
   {
-    name: "Principal",
-    img: "principal.png",
+    name: "Dagger x CT/Tanto",
     opts: {
-      species: ["human"],
-      story: ["influence"],
-      minor: true
+      eridan: false
     }
   },
   {
-    name: "Imode Kurita",
-    img: "imode.png",
+    name: "Scratch n Sniff (Nepeta x Terezi)",
     opts: {
-      species: ["human"],
-      story: ["candy", "influence"],
-      minor: false
+      eridan: false
     }
   },
   {
-    name: "Avril Thorpe",
-    img: "avril.png",
+    name: "Aravris (Aradia x Vriska)",
     opts: {
-      species: ["human"],
-      story: ["candy", "influence"],
-      minor: false
+      eridan: false
     }
   },
   {
-    name: "Silas P Beauregard III",
-    img: "silas.png",
+    name: "Rosefef (Rose x Feferi)",
     opts: {
-      species: ["human"],
-      story: ["candy", "influence"],
-      minor: false
+      eridan: false
     }
   },
   {
-    name: "Ruthie Gold",
-    img: "ruthie.png",
+    name: "Jadekan (Jade x Kanaya)",
     opts: {
-      species: ["troll"],
-      story: ["influence"],
-      minor: true
+      eridan: false
     }
   },
   {
-    name: "Andrew Hussie",
-    img: "hussie.png",
+    name: "DirkJohn",
     opts: {
-      species: ["human"],
-      story: ["threat"],
-      minor: true
+      eridan: false
     }
   },
   {
-    name: "Brain Ghost Dirk (Meat)",
-    img: "mbgd.png",
+    name: "DirkJune",
     opts: {
-      species: ["human"],
-      story: ["catnap"],
-      minor: true
+      eridan: false
     }
   },
   {
-    name: "Motter Ataxia",
-    img: "motter.png",
+    name: "Jadefef (Jade x Feferi)",
     opts: {
-      species: ["troll"],
-      story: ["catnap"],
-      minor: true
+      eridan: false
     }
   },
   {
-    name: "MD",
-    img: "md.png",
+    name: "JadeRose",
     opts: {
-      species: ["carap"],
-      story: ["catnap"],
-      minor: true
+      eridan: false
     }
   },
   {
-    name: "Jake English (Meat)",
-    img: "mjake.png",
+    name: "White Bread (Swiss x Harry)",
     opts: {
-      species: ["human"],
-      story: ["catnap", "meat"],
-      minor: false
-    }
-  },
-  {
-    name: "Hysterical Dame",
-    img: "dame.png",
-    opts: {
-      species: ["carap"],
-      story: ["catnap"],
-      minor: true
-    }
-  },
-  {
-    name: "Nervous Broad",
-    img: "broad.png",
-    opts: {
-      species: ["carap"],
-      story: ["catnap"],
-      minor: true
-    }
-  },
-  {
-    name: "Flinty Glasswipe",
-    img: "flinty.png",
-    opts: {
-      species: ["carap"],
-      story: ["catnap"],
-      minor: true
-    }
-  },
-  {
-    name: "Swifer Eggmop (Meat)",
-    img: "mswifer.png",
-    opts: {
-      species: ["troll"],
-      story: ["catnap"],
-      minor: false
-    }
-  },
-  {
-    name: "Cliper Borden",
-    img: "cliper.png",
-    opts: {
-      species: ["troll"],
-      story: ["catnap"],
-      minor: false
-    }
-  },
-  {
-    name: "Diamonds Droog",
-    img: "droog.png",
-    opts: {
-      species: ["carap"],
-      story: ["catnap", "ddd"],
-      minor: false
-    }
-  },
-  {
-    name: "Dad Crocker",
-    img: "dad.png",
-    opts: {
-      species: ["human"],
-      story: ["catnap", "ddd"],
-      minor: false
-    }
-  },
-  {
-    name: "Average Bartender",
-    img: "bartender.png",
-    opts: {
-      species: ["carap"],
-      story: ["ddd"],
-      minor: true
-    }
-  },
-  {
-    name: "Problem Sleuth",
-    img: "sleuth.png",
-    opts: {
-      species: ["carap"],
-      story: ["ddd"],
-      minor: false
-    }
-  },
-  {
-    name: "Snowman",
-    img: "snowman.png",
-    opts: {
-      species: ["carap"],
-      story: ["ddd"],
-      minor: false
-    }
-  },
-  {
-    name: "Tough Mook",
-    img: "thug.png",
-    opts: {
-      species: ["carap"],
-      story: ["ddd"],
-      minor: true
-    }
-  },
-  {
-    name: "Spades Slick",
-    img: "slick.png",
-    opts: {
-      species: ["carap"],
-      story: ["ddd"],
-      minor: false
-    }
-  },
-  {
-    name: "Caretaker",
-    img: "caretaker.png",
-    opts: {
-      species: ["nymph"],
-      story: ["delta"],
-      minor: false
-    }
-  },
-  {
-    name: "Meemaw",
-    img: "meemaw.png",
-    opts: {
-      species: ["nymph"],
-      story: ["delta"],
-      minor: true
-    }
-  },
-  {
-    name: "TC",
-    img: "tc.png",
-    opts: {
-      species: ["satyr"],
-      story: ["delta"],
-      minor: false
-    }
-  },
-  {
-    name: "Swiss Elysi",
-    img: "swiss.png",
-    opts: {
-      species: ["satyr"],
-      story: ["delta"],
-      minor: false
-    }
-  },
-  {
-    name: "Cloppy",
-    img: "cloppy.png",
-    opts: {
-      species: ["other"],
-      story: ["delta"],
-      minor: true
-    }
-  },
-  {
-    name: "The Licker",
-    img: "licker.png",
-    opts: {
-      species: ["other"],
-      story: ["delta"],
-      minor: true
-    }
-  },
-  {
-    name: "Terezi (Satyr)",
-    img: "satyrezi.png",
-    opts: {
-      species: ["satyr", "troll"],
-      story: ["delta"],
-      minor: true
-    }
-  },
-  {
-    name: "Vriska (Nymph)",
-    img: "nymphska.png",
-    opts: {
-      species: ["nymph", "troll"],
-      story: ["delta"],
-      minor: true
-    }
-  },
-  {
-    name: "Hegemonic Brute",
-    img: "dbrute.png",
-    opts: {
-      species: ["carap"],
-      story: ["delta"],
-      minor: true
-    }
-  },
-  {
-    name: "Jack Noir",
-    img: "dnoir.png",
-    opts: {
-      species: ["carap"],
-      story: ["delta"],
-      minor: true
-    }
-  },
-  {
-    name: "Colluding Dunce",
-    img: "dunce.png",
-    opts: {
-      species: ["carap"],
-      story: ["delta"],
-      minor: false
-    }
-  },
-  {
-    name: "Dagger",
-    img: "dagger.png",
-    opts: {
-      species: ["nymph"],
-      story: ["delta"],
-      minor: false
-    }
-  },
-  {
-    name: "AA",
-    img: "aa.png",
-    opts: {
-      species: ["nymph"],
-      story: ["delta"],
-      minor: false
-    }
-  },
-  {
-    name: "CT",
-    img: "ct.png",
-    opts: {
-      species: ["satyr"],
-      story: ["delta"],
-      minor: false
-    }
-  },
-  {
-    name: "Gubhub Delvry",
-    img: "gubhub.png",
-    opts: {
-      species: ["troll"],
-      story: ["candy"],
-      minor: true
-    }
-  },
-  {
-    name: "8r8k Soldiers",
-    img: "8r8ksoldiers.png",
-    opts: {
-      species: ["troll", "human"],
-      story: ["candy"],
-      minor: true
-    }
-  },
-  {
-    name: "Ace Dick",
-    img: "dick.png",
-    opts: {
-      species: ["carap"],
-      story: ["catnap"],
-      minor: true
-    }
-  },
-  {
-    name: "Seth",
-    img: "seth.png",
-    opts: {
-      species: ["denizen"],
-      story: ["delta"],
-      minor: true
+      eridan: false
     }
   }
 ];
