@@ -362,7 +362,7 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
-    name: "Sharknade (Eridan x John)",
+    name: "Sharknado (Eridan x John)",
     img: "shiplist pics.png",
     opts: {
       eridan: true
