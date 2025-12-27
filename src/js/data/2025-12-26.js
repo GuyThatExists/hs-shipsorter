@@ -397,7 +397,7 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
-    name: "Aranea x Cronus",
+    name: "Aracro (Aranea x Cronus)",
     img: "shiplist pics.png",
     opts: {
       eridan: false
@@ -467,7 +467,7 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
-    name: "Swisstavvy (Swiss x Tavvy)",
+    name: "Swavvy (Swiss x Tavvy)",
     img: "shiplist pics.png",
     opts: {
       eridan: false
@@ -530,14 +530,91 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
-    name: "JadeRose",
+    name: "White Bread (Swiss x Harry)",
     img: "shiplist pics.png",
     opts: {
       eridan: false
     }
   },
   {
-    name: "White Bread (Swiss x Harry)",
+    name: "Xefjoey (Xefros x Joey)",
+    img: "shiplist pics.png",
+    opts: {
+      eridan: false
+    }
+  },
+  {
+    name: "lylAAc (Ly'lac x AA)",
+    img: "shiplist pics.png",
+    opts: {
+      eridan: false
+    }
+  },
+  {
+    name: "lylaCC (Ly'lac x Dagger)",
+    img: "shiplist pics.png",
+    opts: {
+      eridan: false
+    }
+  },
+  {
+    name: "Swiffy (Swiss x Yiffy)",
+    img: "shiplist pics.png",
+    opts: {
+      eridan: false
+    }
+  },
+  {
+    name: "Vrislac (Vrissy x Ly'lac)",
+    img: "shiplist pics.png",
+    opts: {
+      eridan: false
+    }
+  },
+  {
+    name: "Bowyiff (TC/Bowie x Yiffy)",
+    img: "shiplist pics.png",
+    opts: {
+      eridan: false
+    }
+  },
+  {
+    name: "TClac (TC/Bowie x Ly'lac)",
+    img: "shiplist pics.png",
+    opts: {
+      eridan: false
+    }
+  },
+  {
+    name: "Swiss Mountains (Swiss x CT/Tanto)",
+    img: "shiplist pics.png",
+    opts: {
+      eridan: false
+    }
+  },
+  {
+    name: "Ragebaiters (TC/Bowie x Tavvy)",
+    img: "shiplist pics.png",
+    opts: {
+      eridan: false
+    }
+  },
+  {
+    name: "Swiss x CT/Tanto x TC/Bowie",
+    img: "shiplist pics.png",
+    opts: {
+      eridan: false
+    }
+  },
+  {
+    name: "lylAAgger (Ly'lac x AA x Dagger)",
+    img: "shiplist pics.png",
+    opts: {
+      eridan: false
+    }
+  },
+  {
+    name: "Vrisharry (Vrissy x Harry)",
     img: "shiplist pics.png",
     opts: {
       eridan: false
