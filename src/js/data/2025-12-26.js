@@ -831,5 +831,33 @@ dataSet[dataSetVersion].characterData = [
     opts: {
       char: ["rose", "jasprose"]
     }
+  },
+  {
+    name: "June x Jasprose",
+    img: "shiplist pics.png",
+    opts: {
+      char: ["june", "jasprose"]
+    }
+  },
+  {
+    name: "John x Jasprose",
+    img: "shiplist pics.png",
+    opts: {
+      char: ["john", "jasprose"]
+    }
+  },
+  {
+    name: "Jade x Jasprose",
+    img: "shiplist pics.png",
+    opts: {
+      char: ["jade", "jasprose"]
+    }
+  },
+  {
+    name: "Jane x Jasprose",
+    img: "shiplist pics.png",
+    opts: {
+      char: ["jane", "jasprose"]
+    }
   }
 ];
