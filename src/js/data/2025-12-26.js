@@ -11,13 +11,16 @@ dataSet[dataSetVersion].options = [
       { name: "John", key: "john", checked: false },
       { name: "June", key: "june", checked: false },
       { name: "Rose", key: "rose", checked: false },
+      { name: "Jasprose", key: "jasprose", checked: false },
       { name: "Dave", key: "dave", checked: false },
       { name: "Davesprite", key: "davesprite", checked: false },
       { name: "Davepeta", key: "davepeta", checked: false },
       { name: "Jade", key: "jade", checked: false },
+      { name: "Jadesprite", key: "jadesprite", checked: false },
       { name: "Jane", key: "jane", checked: false },
       { name: "Jake", key: "jake", checked: false },
       { name: "Roxy", key: "roxy", checked: false },
+      { name: "Fefeta", key: "fefeta", checked: false },
       { name: "Dirk", key: "dirk", checked: false },
       { name: "Bro", key: "bro", checked: false },
       { name: "Grandpa", key: "grandpa", checked: false },
@@ -792,6 +795,41 @@ dataSet[dataSetVersion].characterData = [
     img: "shiplist pics.png",
     opts: {
       char: ["nepeta", "feferi"]
+    }
+  },
+  {
+    name: "Roxy x Fefeta",
+    img: "shiplist pics.png",
+    opts: {
+      char: ["roxy", "fefeta"]
+    }
+  },
+  {
+    name: "Jadecest (Jade x Jade)",
+    img: "shiplist pics.png",
+    opts: {
+      char: ["jade"]
+    }
+  },
+  {
+    name: "Jade x Jadesprite",
+    img: "shiplist pics.png",
+    opts: {
+      char: ["jade", "jadesprite"]
+    }
+  },
+  {
+    name: "DAVE//OVER (Dave x Equius)",
+    img: "shiplist pics.png",
+    opts: {
+      char: ["dave", "equius"]
+    }
+  },
+  {
+    name: "Rose x Jasprose",
+    img: "shiplist pics.png",
+    opts: {
+      char: ["rose", "jasprose"]
     }
   }
 ];
