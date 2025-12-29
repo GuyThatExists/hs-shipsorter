@@ -786,5 +786,12 @@ dataSet[dataSetVersion].characterData = [
     opts: {
       char: ["rufioh", "horuss"]
     }
+  },
+  {
+    name: "Catfish (Nepeta x Feferi)",
+    img: "shiplist pics.png",
+    opts: {
+      char: ["nepeta", "feferi"]
+    }
   }
 ];
