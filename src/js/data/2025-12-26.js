@@ -866,5 +866,12 @@ dataSet[dataSetVersion].characterData = [
     opts: {
       char: ["dave", "nepeta"]
     }
+  },
+  {
+    name: "Karkatcest (Karkat x Karkat)",
+    img: "shiplist pics.png",
+    opts: {
+      char: ["karkat"]
+    }
   }
 ];
