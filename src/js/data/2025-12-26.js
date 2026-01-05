@@ -873,5 +873,19 @@ dataSet[dataSetVersion].characterData = [
     opts: {
       char: ["karkat"]
     }
+  },
+  {
+    name: "Tant'lac (CT/Tanto x Ly'lac)",
+    img: "shiplist pics.png",
+    opts: {
+      char: ["ct", "lylac"]
+    }
+  },
+  {
+    name: "Swy'lac (Swiss x Ly'lac)",
+    img: "shiplist pics.png",
+    opts: {
+      char: ["swiss", "lylac"]
+    }
   }
 ];
