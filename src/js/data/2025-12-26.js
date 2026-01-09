@@ -887,5 +887,12 @@ dataSet[dataSetVersion].characterData = [
     opts: {
       char: ["swiss", "lylac"]
     }
+  },
+  {
+    name: "'oh the crackship' (Dagger x Caliborn)",
+    img: "shiplist pics.png",
+    opts: {
+      char: ["dagger", "caliborn"]
+    }
   }
 ];
